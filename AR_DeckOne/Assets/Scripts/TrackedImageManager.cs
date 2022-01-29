@@ -12,7 +12,7 @@ public class TrackedImageManager : MonoBehaviour
     public UnityEvent<ARTrackedImage> OnTrackedImageUpdated;
     public UnityEvent<ARTrackedImage> OnTrackedImageRemoved;
 
-    private GameManager _gameManager;
+    public GameManager _gameManager;
 
     private void Start()
     {
