@@ -107,4 +107,5 @@ MonoBehaviour:
       e33: 0
     checkPackageVersions: 1
   port: 44819
-  embeddedImageLibraries: []
+  embeddedImageLibraries:
+  - {fileID: 11400000, guid: 0979a9c6cdf37244eb1c0d519becc06e, type: 2}
