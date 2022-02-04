@@ -47,3 +47,23 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: QRCode
     m_Texture: {fileID: 2800000, guid: 1868c13b56ef3472f9708ae0fa29ff38, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5496773599480899978
+      m_GuidHigh: 10117323759082746524
+    m_SerializedTextureGuid:
+      m_GuidLow: 5121774852674961978
+      m_GuidHigh: 10100087372997225627
+    m_Size: {x: 0.15, y: 0.23402427}
+    m_SpecifySize: 1
+    m_Name: Tracking-CardIteration-5-Player-B
+    m_Texture: {fileID: 2800000, guid: 9938423a331747149b6ce803f4b72a8c, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5326586713406756191
+      m_GuidHigh: 4588424309912838541
+    m_SerializedTextureGuid:
+      m_GuidLow: 9175216818906582189
+      m_GuidHigh: 6081464296455986667
+    m_Size: {x: 0.15, y: 0.23402427}
+    m_SpecifySize: 1
+    m_Name: Tracking-CardIteration-5-Player-A
+    m_Texture: {fileID: 2800000, guid: 9c1dccadeb157f54ebdd7a808eb36554, type: 3}
