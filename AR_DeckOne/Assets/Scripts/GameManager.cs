@@ -1,3 +1,9 @@
+//----------------------------------------------------------------------------------------------
+// Darmstadt University of Applied Sciences, Expanded Realities, AR Art- and App-Development
+// Script by:    Daniel Heilmann (771144)
+// Last changed:  10-02-22
+//----------------------------------------------------------------------------------------------
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,10 +13,19 @@ public class GameManager : MonoBehaviour
 {
     public ARTrackedImageManager trackedImageManager;
     public GameManager gameManager;
+    public static GameManager Instance { set; get; }
 
-    public static GameManager instance
+    private void Awake()
     {
-        get { return FindObjectOfType<GameManager>(); }
+        if (Instance == null)   //with this if-structure it is IMPOSSIBLE to create more than one instance
+        {
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject); // referring to the gameObject, this singleton script (class) is attached to
+        }
+        else
+        {
+            Destroy(this.gameObject);   //if you somehow still get to create a new singleton gameobject regardless, destroy the new one
+        }
     }
 
     public void OnTrackedImageAdded(ARTrackedImage trackedImage)

@@ -16,18 +16,18 @@ public class TrackedImageManager : MonoBehaviour
 
     private void Start()
     {
-        _gameManager = GameManager.instance;
+        _gameManager = GameManager.Instance;
     }
 
     private void OnEnable()
     {
-        Debug.Log("Object has been enabled.");
+        Debug.Log("Tracking has been enabled.");
         trackedImageManager.trackedImagesChanged += OnChanged;
     }
 
     private void OnDisable()
     {
-        Debug.Log("Object has been enabled.");
+        Debug.Log("Tracking has been disabled.");
         trackedImageManager.trackedImagesChanged -= OnChanged;
     }
 

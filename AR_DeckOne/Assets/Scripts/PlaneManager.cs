@@ -11,7 +11,7 @@ public class PlaneManager : MonoBehaviour
 
     private void Start()
     {
-        _gameManager = GameManager.instance;
+        _gameManager = GameManager.Instance;
     }
 
     private void OnEnable()
