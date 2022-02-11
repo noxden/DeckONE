@@ -47,3 +47,83 @@ MonoBehaviour:
     m_SpecifySize: 0
     m_Name: V8C2
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4745905268138393240
+      m_GuidHigh: 11495181285856553378
+    m_SerializedTextureGuid:
+      m_GuidLow: 9819172202902740177
+      m_GuidHigh: 14317073734970004202
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: V8C3
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4799987984013565780
+      m_GuidHigh: 8255591783157688990
+    m_SerializedTextureGuid:
+      m_GuidLow: 735382842234005690
+      m_GuidHigh: 18025924217708965723
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: V8C4
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4997312534660174603
+      m_GuidHigh: 4499871691401824938
+    m_SerializedTextureGuid:
+      m_GuidLow: 4446328632902273725
+      m_GuidHigh: 597358663075073931
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: V8C5
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4756736929277915631
+      m_GuidHigh: 2601084906310862987
+    m_SerializedTextureGuid:
+      m_GuidLow: 9882208930306008766
+      m_GuidHigh: 4752028582020731274
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: V8C6
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5192865501784900275
+      m_GuidHigh: 8727425954780722870
+    m_SerializedTextureGuid:
+      m_GuidLow: 7152913149099482388
+      m_GuidHigh: 2262463467675487610
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: V8C7
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5723865816819642603
+      m_GuidHigh: 14458763590419982264
+    m_SerializedTextureGuid:
+      m_GuidLow: 10269351327008608096
+      m_GuidHigh: 2631615521051791880
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: V8C8
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5680512634352584587
+      m_GuidHigh: 7683440198413031596
+    m_SerializedTextureGuid:
+      m_GuidLow: 7814884610864341796
+      m_GuidHigh: 6624273010811502552
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: V8C9
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5704412787918932200
+      m_GuidHigh: 8367092408166269841
+    m_SerializedTextureGuid:
+      m_GuidLow: 11778252776236337821
+      m_GuidHigh: 3720895512818901385
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: V8C10
+    m_Texture: {fileID: 0}

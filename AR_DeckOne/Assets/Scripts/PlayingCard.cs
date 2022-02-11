@@ -52,6 +52,30 @@ public class PlayingCard : MonoBehaviour
                 case "V8C2":
                     cardImage = _gameManager.PlayingCardList[2];
                     break;
+                case "V8C3":
+                    cardImage = _gameManager.PlayingCardList[3];
+                    break;
+                case "V8C4":
+                    cardImage = _gameManager.PlayingCardList[4];
+                    break;
+                case "V8C5":
+                    cardImage = _gameManager.PlayingCardList[5];
+                    break;
+                case "V8C6":
+                    cardImage = _gameManager.PlayingCardList[6];
+                    break;
+                case "V8C7":
+                    cardImage = _gameManager.PlayingCardList[7];
+                    break;
+                case "V8C8":
+                    cardImage = _gameManager.PlayingCardList[8];
+                    break;
+                case "V8C9":
+                    cardImage = _gameManager.PlayingCardList[9];
+                    break;
+                case "V8C10":
+                    cardImage = _gameManager.PlayingCardList[10];
+                    break;
                 default:
                     cardImage = _gameManager.PlayingCardList[0];
                     Debug.LogWarning("ReferenceImage \"" + referenceImage.name + "\" has no cardImage assigned to it. Falling back to default.");
