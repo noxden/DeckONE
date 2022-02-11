@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 586482693493244065}
   - component: {fileID: 586482693493244094}
   - component: {fileID: 586482693493244095}
-  - component: {fileID: 586482693493244092}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -141,44 +140,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &586482693493244092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586482693493244093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 343b839abdd8d8c4f958471d5454789a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayingCardList:
-  - {fileID: 21300000, guid: 824ab28f286f10f48a5665f048a71cb0, type: 3}
-  - {fileID: 21300000, guid: 9a13207a420e6334f9e781dff8849927, type: 3}
-  - {fileID: 21300000, guid: a0ce7895c45907241a39997b6a315073, type: 3}
-  - {fileID: 21300000, guid: 85edb2b13164c754eb26f68269fe28a9, type: 3}
-  - {fileID: 21300000, guid: d1d781e58518add41941daa6186628e5, type: 3}
-  - {fileID: 21300000, guid: b73667023e4dd0e4ab958cfcb2f2735c, type: 3}
-  - {fileID: 21300000, guid: a3ae8ebf6a1130c429f0a1bb06327dd1, type: 3}
-  - {fileID: 21300000, guid: 7f13cde4276d5f24385318d3adc4ca79, type: 3}
-  - {fileID: 21300000, guid: b16043728cf783949a6a1f92b526047e, type: 3}
-  - {fileID: 21300000, guid: 9d5da586edc76334a9f378b0d82b31cf, type: 3}
-  - {fileID: 21300000, guid: 45d67bcc263f9804dbbab52002538d09, type: 3}
-  - {fileID: 21300000, guid: bd012c2477e0993409cf29be06a6f034, type: 3}
-  - {fileID: 21300000, guid: 9b4e86f9ca34ffd4eb4feb42b75ab62f, type: 3}
-  - {fileID: 21300000, guid: 19392d33328af134f89e0dfd7b25f01a, type: 3}
-  - {fileID: 21300000, guid: b8fd06013ce249e4eb482c26fc63eeb8, type: 3}
-  - {fileID: 21300000, guid: ed67aba510fe3674b9d4e15dc77b612d, type: 3}
-  - {fileID: 21300000, guid: 6ad591ae5babd7c47ae462287b11108b, type: 3}
-  - {fileID: 21300000, guid: e4c63e7fe957df649b6c169c2b8aeb63, type: 3}
-  - {fileID: 21300000, guid: a01f6126e6e77c1469f32ba7f83fba82, type: 3}
-  - {fileID: 21300000, guid: cbe439a96ed391340bbf6e8a16668507, type: 3}
-  - {fileID: 21300000, guid: 2a552d0209532614a87c5e4aa9a5e322, type: 3}
-  - {fileID: 21300000, guid: c7725d042c9fa09439173fcab3059da2, type: 3}
-  - {fileID: 21300000, guid: f13166f9dc44c81499a8101a248de15c, type: 3}
-  - {fileID: 21300000, guid: c8d0508054934714283cbfce738dca87, type: 3}
-  - {fileID: 21300000, guid: fb1daa58832ab8644a61cd70edbe74ef, type: 3}
 --- !u!1 &5946910474643691237
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2743021278653168884}
+  - component: {fileID: 2816975091402579684}
   m_Layer: 0
   m_Name: PlayingCardPrefab
   m_TagString: Untagged
@@ -211,3 +173,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2816975091402579684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5946910474643691237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343b839abdd8d8c4f958471d5454789a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

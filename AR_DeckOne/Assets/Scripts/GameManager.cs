@@ -1,8 +1,12 @@
-//----------------------------------------------------------------------------------------------
-// Darmstadt University of Applied Sciences, Expanded Realities, AR Art- and App-Development
+//----------------------------------------------------------------
+// Darmstadt University of Applied Sciences, Expanded Realities
+// Course: AR Art- and App-Development (Jan Alexander)
 // Script by:    Daniel Heilmann (771144)
-// Last changed:  10-02-22
-//----------------------------------------------------------------------------------------------
+// Last changed:  11-02-22
+// Legend: 
+//    - "//>" indicates a summary for the following code.
+//    - "//<" indicates a summary for the preceding code.
+//----------------------------------------------------------------
 
 using System.Collections;
 using System.Collections.Generic;
@@ -11,20 +15,22 @@ using UnityEngine.XR.ARFoundation;
 
 public class GameManager : MonoBehaviour
 {
-    public ARTrackedImageManager trackedImageManager;
-    public GameManager gameManager;
     public static GameManager Instance { set; get; }
+    public ARTrackedImageManager trackedImageManager;
+
+    [SerializeField]
+    public List<Sprite> PlayingCardList;    //< Contains the sprites for all playing cards.
 
     private void Awake()
     {
-        if (Instance == null)   //with this if-structure it is IMPOSSIBLE to create more than one instance
+        if (Instance == null)   //< With this if-structure it is IMPOSSIBLE to create more than one instance.
         {
             Instance = this;
-            DontDestroyOnLoad(this.gameObject); // referring to the gameObject, this singleton script (class) is attached to
+            DontDestroyOnLoad(this.gameObject); //< Referring to the gameObject, this singleton script (class) is attached to.
         }
         else
         {
-            Destroy(this.gameObject);   //if you somehow still get to create a new singleton gameobject regardless, destroy the new one
+            Destroy(this.gameObject);   //< If you somehow still get to create a new singleton gameobject regardless, destroy the new one.
         }
     }
 
