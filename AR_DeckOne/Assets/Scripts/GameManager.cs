@@ -12,6 +12,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using Lean.Touch;
 
 public class GameManager : MonoBehaviour
 {
@@ -34,6 +35,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Touch Events
+    public void onTap(LeanFinger finger)
+    {
+        Debug.Log($"{this.name} just registered a finger tap at {finger.ScreenPosition}!");
+    }
+
+    // Tracked Image Events
     public void OnTrackedImageAdded(ARTrackedImage trackedImage)
     {
         print($"{trackedImage.referenceImage.name} has been added.");
@@ -52,12 +60,10 @@ public class GameManager : MonoBehaviour
     {
         print($"Plane with ID {plane.trackableId} has been added.");
     }
-
     public void OnPlaneUpdated(ARPlane plane)
     {
         print($"Plane with ID {plane.trackableId} has been added.");
     }
-
     public void OnPlaneRemoved(ARPlane plane)
     {
         print($"Plane with ID {plane.trackableId} has been added.");
