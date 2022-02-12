@@ -46,11 +46,35 @@ public class PlayingCard : MonoBehaviour
 
             switch (referenceImage.name)
             {
-                case "V8C1":
+                case "V9Ca1":
                     cardImage = _gameManager.PlayingCardList[1];
                     break;
-                case "V8C2":
+                case "V9Ca2":
                     cardImage = _gameManager.PlayingCardList[2];
+                    break;
+                case "V9Ca3":
+                    cardImage = _gameManager.PlayingCardList[3];
+                    break;
+                case "V9Ca4":
+                    cardImage = _gameManager.PlayingCardList[4];
+                    break;
+                case "V9Ca5":
+                    cardImage = _gameManager.PlayingCardList[5];
+                    break;
+                case "V9Cb1":
+                    cardImage = _gameManager.PlayingCardList[6];
+                    break;
+                case "V9Cb2":
+                    cardImage = _gameManager.PlayingCardList[7];
+                    break;
+                case "V9Cb3":
+                    cardImage = _gameManager.PlayingCardList[4];    // so that both decks have the same card "equipped" on one of their trackers
+                    break;
+                case "V9Cb4":
+                    cardImage = _gameManager.PlayingCardList[9];
+                    break;
+                case "V9Cb5":
+                    cardImage = _gameManager.PlayingCardList[10];
                     break;
                 default:
                     cardImage = _gameManager.PlayingCardList[0];
