@@ -52,8 +52,8 @@ public class GameManager : MonoBehaviour
             ReferenceImageList.Add(refLib[i]);
             // index# -> the 2D image -> texture
             
-            Debug.Log(refLib[i].name);
-            Debug.Log("I count");
+            //Debug.Log(refLib[i].name);
+            //Debug.Log("I count");
         }
     }
 
