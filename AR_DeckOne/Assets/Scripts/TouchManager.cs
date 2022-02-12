@@ -18,7 +18,7 @@ public class TouchManager : MonoBehaviour
 {
     private GameManager _gameManager;
 
-    public UnityEvent<LeanFinger> OnTap;
+    public UnityEvent<Vector2> OnTap;
 
     void Start()
     {
@@ -42,7 +42,7 @@ public class TouchManager : MonoBehaviour
     private void HandleFingerTap(LeanFinger finger)
     {
         //print($"Finger tap at {finger.ScreenPosition}");
-        OnTap.Invoke(finger);
+        OnTap.Invoke(finger.ScreenPosition);
     }
 
     private void HandleFingerSwipe(LeanFinger finger)

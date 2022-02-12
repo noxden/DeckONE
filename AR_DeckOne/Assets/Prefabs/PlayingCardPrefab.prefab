@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 586482693493244065}
   - component: {fileID: 586482693493244094}
   - component: {fileID: 586482693493244095}
+  - component: {fileID: 5337507621277122429}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CardCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +102,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 32
 --- !u!222 &586482693493244094
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -140,6 +141,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &5337507621277122429
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586482693493244093}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 680, y: 1024, z: 38.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5946910474643691237
 GameObject:
   m_ObjectHideFlags: 0
