@@ -24,7 +24,7 @@ MonoBehaviour:
       m_GuidLow: 4621849375671715866
       m_GuidHigh: 1262799224622634841
     m_Size: {x: 6.6420665, y: 10}
-    m_SpecifySize: 1
+    m_SpecifySize: 0
     m_Name: V9Ca1
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
@@ -34,7 +34,7 @@ MonoBehaviour:
       m_GuidLow: 15196331310690737523
       m_GuidHigh: 7411775872569744200
     m_Size: {x: 6.6420665, y: 10}
-    m_SpecifySize: 1
+    m_SpecifySize: 0
     m_Name: V9Ca2
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
@@ -44,7 +44,7 @@ MonoBehaviour:
       m_GuidLow: 528314178920763574
       m_GuidHigh: 17162663399104745563
     m_Size: {x: 6.6420665, y: 10}
-    m_SpecifySize: 1
+    m_SpecifySize: 0
     m_Name: V9Ca3
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
@@ -54,7 +54,7 @@ MonoBehaviour:
       m_GuidLow: 582200035502137793
       m_GuidHigh: 14282960922247209017
     m_Size: {x: 6.6420665, y: 10}
-    m_SpecifySize: 1
+    m_SpecifySize: 0
     m_Name: V9Ca4
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
@@ -64,7 +64,7 @@ MonoBehaviour:
       m_GuidLow: 1906424132255278146
       m_GuidHigh: 2455418793559125882
     m_Size: {x: 6.6420665, y: 10}
-    m_SpecifySize: 1
+    m_SpecifySize: 0
     m_Name: V9Ca5
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
@@ -74,7 +74,7 @@ MonoBehaviour:
       m_GuidLow: 17308489415046649089
       m_GuidHigh: 10231446389147103258
     m_Size: {x: 6.6420665, y: 10}
-    m_SpecifySize: 1
+    m_SpecifySize: 0
     m_Name: V9Cb1
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
@@ -84,7 +84,7 @@ MonoBehaviour:
       m_GuidLow: 987619416997211582
       m_GuidHigh: 12611176960586248123
     m_Size: {x: 6.6420665, y: 10}
-    m_SpecifySize: 1
+    m_SpecifySize: 0
     m_Name: V9Cb2
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
@@ -94,7 +94,7 @@ MonoBehaviour:
       m_GuidLow: 12521277880982638220
       m_GuidHigh: 3025295451929456779
     m_Size: {x: 6.6420665, y: 10}
-    m_SpecifySize: 1
+    m_SpecifySize: 0
     m_Name: V9Cb3
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
@@ -104,7 +104,7 @@ MonoBehaviour:
       m_GuidLow: 16533998504512248683
       m_GuidHigh: 307893912553335081
     m_Size: {x: 6.6420665, y: 10}
-    m_SpecifySize: 1
+    m_SpecifySize: 0
     m_Name: V9Cb4
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
@@ -114,6 +114,6 @@ MonoBehaviour:
       m_GuidLow: 5693689946484496629
       m_GuidHigh: 16624293536415638619
     m_Size: {x: 6.6420665, y: 10}
-    m_SpecifySize: 1
+    m_SpecifySize: 0
     m_Name: V9Cb5
     m_Texture: {fileID: 0}
