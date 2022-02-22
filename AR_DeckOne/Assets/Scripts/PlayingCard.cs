@@ -2,7 +2,7 @@
 // Darmstadt University of Applied Sciences, Expanded Realities
 // Course: AR Art- and App-Development (Jan Alexander)
 // Script by:    Daniel Heilmann (771144)
-// Last changed:  11-02-22
+// Last changed:  21-02-22
 // Legend: 
 //    - "//>" indicates a summary for the following code.
 //    - "//<" indicates a summary for the preceding code.
@@ -22,6 +22,7 @@ public class PlayingCard : MonoBehaviour
 
     private XRReferenceImage referenceImage;
     private Sprite           cardImage;
+    private List<XRReferenceImage> ReferenceImageList;
 
     // Start is called before the first frame update
     void Start()
@@ -35,15 +36,23 @@ public class PlayingCard : MonoBehaviour
             //Debug.Log("Found camera: " + eventCamera.name + "!");
         }
 
-        //> Reads referenceImage of the ARTracker and fills cardImage with a corresponding sprite.
+        InitializePlayingCard();
+        
+    }
+
+    //> Reads referenceImage of the ARTracker and fills cardImage with a corresponding sprite.
+    void InitializePlayingCard()
+    {
         if (GetComponent<ARTrackedImage>().referenceImage == null)
         {
-            Debug.LogWarning("referenceImage is null.");
+            Debug.LogWarning($"{this.name}'s referenceImage is null.");
         }
         else
         {
-            referenceImage = GetComponent<ARTrackedImage>().referenceImage;
-
+            this.referenceImage = GetComponent<ARTrackedImage>().referenceImage;
+            cardImage = DeckManager.Instance.FetchCardImage(referenceImage);  //< Card uses its own referenceImage as a key to receive a cardImage ;
+                                                                              //  Maybe this could be coded better, as it directly accesses the DeckManager
+            /*
             switch (referenceImage.name)
             {
                 case "V9Ca1":
@@ -81,20 +90,19 @@ public class PlayingCard : MonoBehaviour
                     Debug.LogWarning("ReferenceImage \"" + referenceImage.name + "\" has no cardImage assigned to it. Falling back to default.");
                     break;
             }
-
-            Debug.Log("Displaying " + cardImage.name + " on " + referenceImage.name + ".");
+            */ // ARCHIVED
         }
 
         //> Overwrites currently displayed sprite with new one from the cardImage variable.
         if (cardImage == null)
         {
-            Debug.Log("cardImage is null.");
+            Debug.Log("cardImage is null. (impossible case)");
         }
         else
         {
             GetComponentInChildren<Image>().sprite = cardImage;
+            Debug.Log($"Tracked PlayingCard now projects {cardImage.name} onto {referenceImage.name}.");
         }
-
     }
 
 }

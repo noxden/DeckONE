@@ -16,14 +16,7 @@ using UnityEngine.Events;
 
 public class TouchManager : MonoBehaviour
 {
-    private GameManager _gameManager;
-
     public UnityEvent<Vector2> OnTap;
-
-    void Start()
-    {
-        _gameManager = GameManager.Instance;
-    }
 
     void OnEnable()
     {

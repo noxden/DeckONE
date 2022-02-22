@@ -1,8 +1,8 @@
 //----------------------------------------------------------------
 // Darmstadt University of Applied Sciences, Expanded Realities
 // Course: AR Art- and App-Development (Jan Alexander)
-// Script by:    Daniel Heilmann (771144)  // Jonathan Kuchenbrod (770410)
-// Last changed:  11-02-22
+// Script by:    Daniel Heilmann (771144), Jonathan Kuchenbrod (770410)
+// Last changed:  21-02-22
 // Legend: 
 //    - "//>" indicates a summary for the following code.
 //    - "//<" indicates a summary for the preceding code.
@@ -13,18 +13,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.XR.ARFoundation;
-using Lean.Touch;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { set; get; }
+
+    // Connections to other instances / scripts / gameobjects
     public ARTrackedImageManager trackedImageManager;
 
-    
-    public List<Sprite> PlayingCardList;    //< Contains the sprites for all playing cards.
-
-
-    public List<XRReferenceImage> ReferenceImageList;    
+    //[SerializeField] private List<Sprite> CardImageList;    //< Contains the sprites for all playing cards. Not needed anymore
+    [SerializeField] private List<XRReferenceImage> ReferenceImageList;
 
 
     private void Awake()
@@ -42,8 +40,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        
-    
         IReferenceImageLibrary  refLib = trackedImageManager.referenceLibrary;
 
         int libLength = refLib.count;
@@ -52,17 +48,18 @@ public class GameManager : MonoBehaviour
         {
             ReferenceImageList.Add(refLib[i]);
             // index# -> the 2D image -> texture
-            
-            //Debug.Log(refLib[i].name);
-            //Debug.Log("I count");
+
+            //Debug.Log($"GameManager registered {refLib[i].name}");
         }
+        
     }
 
-    // Touch Events
+    /* Touch Events
     public void onTap(LeanFinger finger)
     {
         Debug.Log($"{this.name} just registered a finger tap at {finger.ScreenPosition}!");
     }
+    */
 
     // Tracked Image Events
     public void OnTrackedImageAdded(ARTrackedImage trackedImage)
@@ -92,4 +89,15 @@ public class GameManager : MonoBehaviour
         print($"Plane with ID {plane.trackableId} has been added.");
     }
 
+    public List<XRReferenceImage> GetReferenceImageList()
+    {
+        return ReferenceImageList;
+    }
+
+    /*
+    public List<Sprite> GetCardImageList()
+    {
+        return CardImageList;
+    }
+    */
 }

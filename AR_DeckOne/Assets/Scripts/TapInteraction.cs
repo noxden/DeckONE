@@ -1,3 +1,13 @@
+//----------------------------------------------------------------
+// Darmstadt University of Applied Sciences, Expanded Realities
+// Course: AR Art- and App-Development (Jan Alexander)
+// Script by:    Daniel Heilmann (771144)
+// Last changed:  12-02-22
+// Legend: 
+//    - "//>" indicates a summary for the following code.
+//    - "//<" indicates a summary for the preceding code.
+//----------------------------------------------------------------
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
