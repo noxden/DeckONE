@@ -2,10 +2,12 @@
 // Darmstadt University of Applied Sciences, Expanded Realities
 // Course: AR Art- and App-Development (Jan Alexander)
 // Script by:    Daniel Heilmann (771144)
-// Last changed:  21-02-22
+// Last changed:  23-02-22
 // Legend: 
 //    - "//>" indicates a summary for the following code.
 //    - "//<" indicates a summary for the preceding code.
+//
+// Code quality: Poor
 //----------------------------------------------------------------
 
 using System.Collections;
@@ -14,9 +16,7 @@ using UnityEngine;
 
 public class DeckBuilder : MonoBehaviour
 {
-    //> The following variables are / will be linked to other classes
-    //private List<Sprite> AllCardImages;
-
+    public List<Sprite> AllCards;
     public List<Sprite> ChosenCards;    //< This list will later be filled by the player through UI buttons
 
     private void Start()
@@ -26,15 +26,47 @@ public class DeckBuilder : MonoBehaviour
         //> Establishing connection to the CardImageList in the GameManager
         //AllCardImages = GameManager.Instance.GetCardImageList();
 
-        BuildDeck();
+        //BuildDeck();
+
+        ChosenCards = new List<Sprite>();
+}
+
+    public void AddToChosenCards (Sprite cardImage)
+    {
+        ChosenCards.Add(cardImage);
+        Debug.Log($"Added 1 \"{cardImage.name}\". ChosenCards now contains {ChosenCards.Count} entries.");
     }
 
-    void BuildDeck()    //< This function will later be called upon pressing the "Confirm Deck" button. (and after checking that the selection is valid, e.g. only half of referenceImageList.Count)
+    public void RemoveFromChosenCards (Sprite cardImage, int count)
     {
+        for (int i = 0; i < count; i++)
+        {
+            if (ChosenCards.Contains(cardImage))
+            {
+                ChosenCards.Remove(cardImage);
+            }
+            else
+            {
+                Debug.Log($"Can't remove any more cards of type {cardImage.name} from List ChosenCards.");
+            }
+        }
+        Debug.Log($"Removed {count} \"{cardImage.name}\". ChosenCards now contains {ChosenCards.Count} entries.");
+    }
+
+    public void BuildDeck()    //< This function will later be called upon pressing the "Confirm Deck" button. (and after checking that the selection is valid, e.g. only half of referenceImageList.Count)
+    {
+        if (ChosenCards.Count != DeckManager.Instance.GetMaxDeckSize())
+        {
+            Debug.Log($"Your deck needs to contain exactly {DeckManager.Instance.GetMaxDeckSize()} cards!");
+            return;
+        }
+
         foreach (Sprite chosenCard in ChosenCards)
         {
             DeckManager.Instance.AddPlayingCard(chosenCard);
         }
+
+        ChangeScene(Scene.Game);    //< This is just for testing
         /*
         if (AllCardImages.Count == 0)
         {
@@ -46,5 +78,10 @@ public class DeckBuilder : MonoBehaviour
             DeckManager.Instance.SetAssignedCardImage(3, AllCardImages[(int)Random.Range(0, AllCardImages.Count)]);
         }
         */
+    }
+
+    private void ChangeScene(Scene sceneToLoad)
+    {
+        SceneTransitionManager.LoadScene(sceneToLoad);
     }
 }

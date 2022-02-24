@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -169,59 +169,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &92942665
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 92942667}
-  - component: {fileID: 92942666}
-  m_Layer: 0
-  m_Name: DeckBuilder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &92942666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92942665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a83a5f06bf06394290bccd371b92f63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChosenCards:
-  - {fileID: 21300000, guid: 6ad591ae5babd7c47ae462287b11108b, type: 3}
-  - {fileID: 21300000, guid: b8fd06013ce249e4eb482c26fc63eeb8, type: 3}
-  - {fileID: 21300000, guid: c7725d042c9fa09439173fcab3059da2, type: 3}
-  - {fileID: 21300000, guid: 19392d33328af134f89e0dfd7b25f01a, type: 3}
-  - {fileID: 21300000, guid: 9b4e86f9ca34ffd4eb4feb42b75ab62f, type: 3}
-  - {fileID: 21300000, guid: 9d5da586edc76334a9f378b0d82b31cf, type: 3}
-  - {fileID: 21300000, guid: b16043728cf783949a6a1f92b526047e, type: 3}
-  - {fileID: 21300000, guid: f13166f9dc44c81499a8101a248de15c, type: 3}
---- !u!4 &92942667
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92942665}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &137043701
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &422218014
 Light:
   m_ObjectHideFlags: 0

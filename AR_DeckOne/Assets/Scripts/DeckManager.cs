@@ -50,10 +50,10 @@ public class DeckManager : MonoBehaviour
         InitializeDeck();
     }
 
-    private void InitializeDeck()
+    public void InitializeDeck()
     {
         //> Fills the deck with one CardAssignment per referenceImage in gameManager's ReferenceImageList
-        //  The assigned cardImage at this state is the "Error" card, which has index 0
+        //  The assigned cardImage at this state is null
         for (int i = 0; i < ReferenceImageList.Count; i++)
         {
             Deck.Add(new CardAssignment(ReferenceImageList[i], null));
@@ -93,7 +93,7 @@ public class DeckManager : MonoBehaviour
         if (emptyDeckSlot < ReferenceImageList.Count)
         {
             Deck[emptyDeckSlot].cardImage = cardImageInput;
-            Debug.Log($"{this.name} added \"{cardImageInput.name}\", represented by \"{Deck[emptyDeckSlot].referenceImage.name}\".");
+            Debug.Log($"Setup card {emptyDeckSlot+1}: \"{Deck[emptyDeckSlot].referenceImage.name}\" -> \"{cardImageInput.name}\"");
 
             emptyDeckSlot += 1;
         }
@@ -123,6 +123,11 @@ public class DeckManager : MonoBehaviour
         }
         Debug.LogWarning($"Deck does not contain the referenceImage \"{refImageInput.name}\". (impossible case)");
         return null;
+    }
+
+    public int GetMaxDeckSize()
+    {
+        return Deck.Count;
     }
 
     /* ARCHIVED
