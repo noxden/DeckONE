@@ -53,13 +53,12 @@ public class CardImageContainer : MonoBehaviour
         //Debug.Log($"Variable cardCount has been changed to {cardCount}");
 
         UpdateUI();
-
-        
     }
 
     //> Updates visual representation of this card
     private void UpdateUI()
     {
         cardCountText.text = cardCount.ToString();
+        BuildDeckManager.Instance.UpdateUI();
     }
 }

@@ -24,7 +24,7 @@ public class SelectionAreaInstantiator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        List<Sprite> _AllCards = _deckBuilder.AllCards;
+        List<Sprite> _AllCards = _deckBuilder.GetAllCards();
         GameObject targetColumn;
 
         for (int i = 0; i < _AllCards.Count; i++)
@@ -40,14 +40,10 @@ public class SelectionAreaInstantiator : MonoBehaviour
                 //right
             }
 
-            CardContainerPrefab = new GameObject();
-
+            GameObject temp = Instantiate(CardContainerPrefab, targetColumn.transform);
+            CardImageContainer tempCardContainer = temp.GetComponent<CardImageContainer>();
+            tempCardContainer.deckBuilder = _deckBuilder;
+            tempCardContainer.cardImage = _AllCards[i];
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

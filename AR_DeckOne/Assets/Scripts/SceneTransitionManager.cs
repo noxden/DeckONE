@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
 
 public enum Scene   //< This could also be positioned outside of the SceneTransitionManager, thereby shorting every reference to it -> "Scene.Tutorial" instead of "SceneTransitionManager.Scene.Tutorial"
 {
-    Home, Tutorial, Credits, Game, OpenSettings, PreGame
+    Home, Tutorial, Credits, Game, OpenSettings, BuildDeck1, BuildDeck2
 }
 
 public class SceneTransitionManager
@@ -38,8 +38,10 @@ public class SceneTransitionManager
                 return "Credits";
             case Scene.OpenSettings:
                 return "OpenSettings";
-            case Scene.PreGame:
-                return "PreGame";
+            case Scene.BuildDeck1:
+                return "BuildDeck1";
+            case Scene.BuildDeck2:
+                return "BuildDeck2";
         }
         return "";
     }
