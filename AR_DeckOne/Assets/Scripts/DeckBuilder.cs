@@ -22,13 +22,6 @@ public class DeckBuilder : MonoBehaviour
 
     private void Start()
     {        
-        //ChosenCards = new List<Sprite>(10);
-
-        //> Establishing connection to the CardImageList in the GameManager
-        //AllCardImages = GameManager.Instance.GetCardImageList();
-
-        //BuildDeck();
-
         ChosenCards = new List<Sprite>();
     }
 
@@ -70,7 +63,7 @@ public class DeckBuilder : MonoBehaviour
         if (ChosenCards.Count != DeckManager.Instance.GetMaxDeckSize()/2)
         {
             Debug.Log($"Your deck needs to contain exactly {DeckManager.Instance.GetMaxDeckSize()} cards!");
-            return false;       //< Could also be: "return (ChosenCards.Count != DeckManager.Instance.GetMaxDeckSize());"
+            return false;
         }
 
         foreach (Sprite chosenCard in ChosenCards)
@@ -78,17 +71,5 @@ public class DeckBuilder : MonoBehaviour
             DeckManager.Instance.AddPlayingCard(chosenCard);
         }
         return true;
-
-        /*
-        if (AllCardImages.Count == 0)
-        {
-            Debug.Log($"The image list is empty! There are no images to choose from!");
-            return;
-        }
-        else
-        {
-            DeckManager.Instance.SetAssignedCardImage(3, AllCardImages[(int)Random.Range(0, AllCardImages.Count)]);
-        }
-        */
     }
 }
